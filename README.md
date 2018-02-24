@@ -3,7 +3,7 @@ Smart sprinkler technology based on city regulations, homeowner preferences, wea
 
 Weather API - https://openweathermap.org/api
 
-Vizualization with U.S. Atlas TopoJSON - https://github.com/topojson/us-atlas, https://bl.ocks.org/mbostock/4122298
+Vizualization adapted from D3-geo U.S. Counties TopoJSON https://bl.ocks.org/mbostock/4122298
 
 Project built for ProfHacks 2018 at Rowan University
 
