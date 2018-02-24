@@ -5,3 +5,5 @@ Weather API - https://openweathermap.org/api
 
 
 Project built for ProfHacks 2018 at Rowan University
+For the "Sensor Journalism" and "Entrepeneurship" tracks
+http://profhacks.com/
