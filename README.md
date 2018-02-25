@@ -5,7 +5,8 @@ Weather API - https://openweathermap.org/api
 
 Vizualization adapted from D3-geo U.S. Counties TopoJSON https://bl.ocks.org/mbostock/4122298
 
-Project built for ProfHacks 2018 at Rowan University
+SITE IS IN ProfHacks18/Sprinkle.html
 
+Project built for ProfHacks 2018 at Rowan University
 For the "Sensor Journalism" track
 http://profhacks.com/
