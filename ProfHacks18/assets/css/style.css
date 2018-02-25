@@ -136,7 +136,7 @@ input[type="color"],
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 .form-control:focus {
-    border-color: #bcefeb;
+    border-color: white;
 }
 
 h1,
@@ -283,7 +283,7 @@ ul{
     height:auto;
 }
 .video_overlay {
-    background-color: rgba(76, 61, 114, 0.8);
+    background-color: rgba(133, 181, 148, 0.4);
     width: 100%;
     height: auto;
 }
@@ -1043,7 +1043,7 @@ input::-ms-input-placeholder {
 }
 
 .footer_subcribs_area .submit_btn{
-    background: #a099b4;
+    background: white;
     border: 0px solid #ccc;
     color: #333;
     padding: 5px 10px;
@@ -1154,6 +1154,17 @@ input::-ms-input-placeholder {
     font-weight: bold; 
 }
 
+#soil, #sprinkle, #thirst {
+                height: 500px;
+                min-width: 310px;
+                max-width: 800px;
+                margin: 0 auto;
+}
+.loading {
+    margin-top: 10em;
+    text-align: center;
+    color: gray;
+}
 
 
 
