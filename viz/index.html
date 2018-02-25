@@ -4,7 +4,7 @@
         <title>Soil Moisture Data Viz</title>
 
         <style>
-            #container {
+            #soil, #sprinkle, #thirst {
                 height: 500px;
                 min-width: 310px;
                 max-width: 800px;
@@ -20,11 +20,15 @@
         <script src="https://code.highcharts.com/maps/highmaps.js"></script>
         <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
         <script src="https://code.highcharts.com/mapdata/countries/us/us-ok-all.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 
     </head>
 
     <body>
-        <div id="container"></div>
+        <div id="soil"></div>
+        <div id="sprinkle"></div>
+        <div id="thirst"></div>
 
         <script>
         // Prepare demo data
@@ -111,13 +115,13 @@
         ];
 
         // Create the chart
-        Highcharts.mapChart('container', {
+        Highcharts.mapChart('soil', {
             chart: {
                 map: 'countries/us/us-ok-all'
             },
 
             title: {
-                text: 'Highmaps basic demo'
+                text: 'Soil Moisture (m3.m-3)'
             },
 
             subtitle: {
@@ -132,15 +136,99 @@
             },
 
             colorAxis: {
-                min: 0
+                min: 0, 
+                minColor: '#7c7856',
+                maxColor: '#267f0b',
             },
 
             series: [{
                 data: data,
-                name: 'Random data',
+                name: 'Moisture',
                 states: {
                     hover: {
-                        color: '#BADA55'
+                        color: '#9ba5b5'
+                    }
+                },
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.name}'
+                }
+            }]
+        });
+
+        Highcharts.mapChart('sprinkle', {
+            chart: {
+                map: 'countries/us/us-ok-all'
+            },
+
+            title: {
+                text: 'Sprinkle Frequency (days)'
+            },
+
+            subtitle: {
+                text: 'Source map: <a href="http://code.highcharts.com/mapdata/countries/us/us-ok-all.js">Oklahoma</a>'
+            },
+
+            mapNavigation: {
+                enabled: true,
+                buttonOptions: {
+                    verticalAlign: 'bottom'
+                }
+            },
+
+            colorAxis: {
+                min: 0, 
+                minColor: '#bcbcbc',
+                maxColor: '#d18ab3',
+            },
+
+            series: [{
+                data: data,
+                name: 'Frequency',
+                states: {
+                    hover: {
+                        color: '#9ba5b5'
+                    }
+                },
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.name}'
+                }
+            }]
+        });
+
+        Highcharts.mapChart('thirst', {
+            chart: {
+                map: 'countries/us/us-ok-all'
+            },
+
+            title: {
+                text: 'Thirst (1-10)'
+            },
+
+            subtitle: {
+                text: 'Source map: <a href="http://code.highcharts.com/mapdata/countries/us/us-ok-all.js">Oklahoma</a>'
+            },
+
+            mapNavigation: {
+                enabled: true,
+                buttonOptions: {
+                    verticalAlign: 'bottom'
+                }
+            },
+
+            colorAxis: {
+                min: 0, 
+                minColor: '#b2a677',
+                maxColor: '#7ca6ff',
+            },
+
+            series: [{
+                data: data,
+                name: 'Thirst',
+                states: {
+                    hover: {
+                        color: '#9ba5b5'
                     }
                 },
                 dataLabels: {
