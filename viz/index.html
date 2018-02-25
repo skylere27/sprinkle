@@ -41,12 +41,13 @@ d3.json("https://d3js.org/us-10m.v1.json", function(error, us) {
     .selectAll("path")
     .data(topojson.feature(us, us.objects.counties).features)
     .enter().append("path")
-      .attr("d", path);
+      .attr("d", path)
+      .data(us.objects.counties.geometries)
+      .attr("id", function(d) { return d.id; });
 
   svg.append("path")
       .attr("class", "county-borders")
-      .attr("d", path(topojson.mesh(us, us.objects.counties, function(a, b) { return a !== b; })))
-      .attr("id", function(d){console.log(d); return d.id;});
+      .attr("d", path(topojson.mesh(us, us.objects.counties, function(a, b) { return a !== b; })));
 
   svg.append("path")
       .attr("class", "state-borders")
