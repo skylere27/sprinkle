@@ -1,0 +1,734 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Sprinkle</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+
+        <link rel="stylesheet" href="/static//static/assets/css/fonticons.css">
+        <link rel="stylesheet" href="/static//static/assets/fonts/stylesheet.css">
+        <link rel="stylesheet" href="/static//static/assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/static//static/assets/css/jquery.fancybox.css">
+        <link rel="stylesheet" href="/static//static/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static//static/assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="/static//static/assets/css/settings.css">
+
+        <!--        <link rel="stylesheet" href="/static//static/assets/css/bootstrap-theme.min.css">-->
+
+
+        <!--For Plugins external css-->
+        <link rel="stylesheet" href="/static//static/assets/css/plugins.css" />
+
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="/static//static/assets/css/style.css">
+
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="/static//static/assets/css/responsive.css" />
+
+        <script src="/static//static/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+        <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/mapdata/countries/us/us-ok-all.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    </head>
+    <body data-spy="scroll" data-target=".navbar-collapse">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class='preloader'><div class='loaded'>&nbsp;</div></div>
+        <div class="culmn">
+            <header id="main_menu" class="header navbar-fixed-top">
+                <div class="main_menu_bg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="nave_menu">
+                                <nav class="navbar navbar-default">
+                                    <div class="container-fluid">
+                                        <!-- Brand and toggle get grouped for better mobile display -->
+                                        <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                                <span class="sr-only">Toggle navigation</span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                                            <a class="navbar-brand" href="#home">
+                                                <h1>sprinkle</h1>
+                                            </a>
+                                        </div>
+
+                                        <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+
+                                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                                            <ul class="nav navbar-nav navbar-right">
+                                                <li><a href="#home">HOME</a></li>
+                                                <li><a href="#about"> ABOUT</a></li>
+                                                <li><a href="#data">DATA</a></li>
+                                                <li><a href="#settings">SETTINGS</a></li>
+                                                <li><a href="#testimonial">PEOPLE SAY</a></li>
+                                                <li><a href="#contact">CONTACT</a></li>
+                                            </ul>
+
+
+                                        </div>
+
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </header> <!--End of header -->
+
+
+
+
+
+            <section id="home" class="home">
+                <div class="overlay">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 ">
+                                <div class="main_home_slider text-center">
+                                    <div class="single_home_slider">
+                                        <div class="main_home wow fadeInUp" data-wow-duration="700ms">
+                                            <h2 class="title">Sprinkle</h2>
+                                            <div class="separator"></div>
+                                                <p>A personalized sprinkler system that uses the precipitation levels and soil moisture of the user’s home to determine where or not to “sprinkle”.
+                                                </p>
+                                            <div class="home_btn">
+                                                <a href="index2.html" class="btn btn-primary">LOG IN</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="single_home_slider">
+                                        <div class="main_home wow fadeInUp" data-wow-duration="700ms">
+                                            <h2 class="title">Soil Moisture Sensor</h2>
+                                            <div class="separator"></div>
+                                                <p>Measuring the current that passes through our two nail wired system determines how moist the soil is.
+                                                Since water is conductive, a lower current indicates dry soil, then allowing users to sprinkle. </p>
+                                             <div class="home_btn">
+                                                <a href="index2.html" class="btn btn-primary">LOG IN</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="single_home_slider">
+                                        <div class="main_home wow fadeInUp" data-wow-duration="700ms">
+                                            <h2 class="title">Weather API</h2>
+                                            <div class="separator"></div>
+                                            <p>The user’s zip code allows the Arduino to access current and future precipitation levels in that area.
+                                            If there is rainfall during the time the user wants to turn the system on, it will not sprinkle. </p>
+                                        </div>
+
+                                         <div class="home_btn">
+                                                <a href="index2.html" class="btn btn-primary">LOG IN</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+            <section id="about" class="about">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="main_about_area sections">
+                            <div class="col-sm-10 col-sm-offset-1">
+
+                                <div class="main_about_content">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="single_about_left_img text-center wow fadeInLeft" data-wow-duration=".6s">
+                                                <img src="/static//static/assets/images/sprinkler.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-7 wow fadeInRight" data-wow-duration="700ms">
+                                            <div class="single_about_right_content">
+                                                <h3>OUR STORY</h3>
+                                                <br>
+                                                <p>Conserving water reduces the effects of drought,
+                                                cuts the cost of energy bills and prolongs our access to clean water – a finite resource. </p>
+                                                <br>
+                                                <p>According to the Saving Water Partnership, automatic sprinklers waste “40%-50% of the water used.” By choosing Sprinkle &copy;, your lawn will receive the care that it needs,
+                                                your wallet will feel a little heavier, and most importantly, the environment will become greener. </p>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+            <section class="service" id = data>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <div class="main_service_area sections text-center">
+                                <div class="row">
+                                    <div class="head_title text-center">
+                                        <h2>THE DATA</h2>
+                                        <p>As Oklahoma experiences a drought, Sprinkle’s soil moisture data is able to display which counties are overwatered and which are in need of a sprinkle.
+                                        With this information, our system  can conserve water by evenly distributing sprinkles across the state. </p>
+                                        <div class="separator2"></div>
+                                    </div>
+
+                                    <div id="soil"></div>
+        <div id="sprinkle"></div>
+        <div id="thirst"></div>
+
+        <script>
+        // Prepare demo data
+        // Data is joined to map using value of 'hc-key' property by default.
+        // See API docs for 'joinBy' for more info on linking data and map.
+        var data = [
+            ['us-ok-037', 0],
+            ['us-ok-081', 1],
+            ['us-ok-049', 2],
+            ['us-ok-051', 3],
+            ['us-ok-059', 4],
+            ['us-ok-151', 5],
+            ['us-ok-011', 6],
+            ['us-ok-017', 7],
+            ['us-ok-075', 8],
+            ['us-ok-015', 9],
+            ['us-ok-137', 10],
+            ['us-ok-141', 11],
+            ['us-ok-033', 12],
+            ['us-ok-083', 13],
+            ['us-ok-103', 14],
+            ['us-ok-001', 15],
+            ['us-ok-041', 16],
+            ['us-ok-107', 17],
+            ['us-ok-039', 18],
+            ['us-ok-009', 19],
+            ['us-ok-055', 20],
+            ['us-ok-057', 21],
+            ['us-ok-019', 22],
+            ['us-ok-095', 23],
+            ['us-ok-093', 24],
+            ['us-ok-073', 25],
+            ['us-ok-035', 26],
+            ['us-ok-123', 27],
+            ['us-ok-125', 28],
+            ['us-ok-131', 29],
+            ['us-ok-147', 30],
+            ['us-ok-071', 31],
+            ['us-ok-047', 32],
+            ['us-ok-021', 33],
+            ['us-ok-109', 34],
+            ['us-ok-023', 35],
+            ['us-ok-005', 36],
+            ['us-ok-087', 37],
+            ['us-ok-079', 38],
+            ['us-ok-061', 39],
+            ['us-ok-003', 40],
+            ['us-ok-077', 41],
+            ['us-ok-027', 42],
+            ['us-ok-045', 43],
+            ['us-ok-007', 44],
+            ['us-ok-031', 45],
+            ['us-ok-067', 46],
+            ['us-ok-119', 47],
+            ['us-ok-111', 48],
+            ['us-ok-145', 49],
+            ['us-ok-129', 50],
+            ['us-ok-043', 51],
+            ['us-ok-117', 52],
+            ['us-ok-143', 53],
+            ['us-ok-091', 54],
+            ['us-ok-069', 55],
+            ['us-ok-135', 56],
+            ['us-ok-101', 57],
+            ['us-ok-013', 58],
+            ['us-ok-089', 59],
+            ['us-ok-115', 60],
+            ['us-ok-063', 61],
+            ['us-ok-121', 62],
+            ['us-ok-029', 63],
+            ['us-ok-149', 64],
+            ['us-ok-025', 65],
+            ['us-ok-105', 66],
+            ['us-ok-113', 67],
+            ['us-ok-053', 68],
+            ['us-ok-085', 69],
+            ['us-ok-127', 70],
+            ['us-ok-139', 71],
+            ['us-ok-153', 72],
+            ['us-ok-065', 73],
+            ['us-ok-097', 74],
+            ['us-ok-099', 75],
+            ['us-ok-133', 76]
+        ];
+
+        // Create the chart
+        Highcharts.mapChart('soil', {
+            chart: {
+                map: 'countries/us/us-ok-all'
+            },
+
+            title: {
+                text: 'Soil Moisture (m3.m-3)'
+            },
+
+            subtitle: {
+                text: 'Source map: <a href="http://code.highcharts.com/mapdata/countries/us/us-ok-all.js">Oklahoma</a>'
+            },
+
+            mapNavigation: {
+                enabled: true,
+                buttonOptions: {
+                    verticalAlign: 'bottom'
+                }
+            },
+
+            colorAxis: {
+                min: 0,
+                minColor: '#7c7856',
+                maxColor: '#267f0b',
+            },
+
+            series: [{
+                data: data,
+                name: 'Moisture',
+                states: {
+                    hover: {
+                        color: '#9ba5b5'
+                    }
+                },
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.name}'
+                }
+            }]
+        });
+
+        Highcharts.mapChart('sprinkle', {
+            chart: {
+                map: 'countries/us/us-ok-all'
+            },
+
+            title: {
+                text: 'Sprinkle Frequency (days)'
+            },
+
+            subtitle: {
+                text: 'Source map: <a href="http://code.highcharts.com/mapdata/countries/us/us-ok-all.js">Oklahoma</a>'
+            },
+
+            mapNavigation: {
+                enabled: true,
+                buttonOptions: {
+                    verticalAlign: 'bottom'
+                }
+            },
+
+            colorAxis: {
+                min: 0,
+                minColor: '#bcbcbc',
+                maxColor: '#d18ab3',
+            },
+
+            series: [{
+                data: data,
+                name: 'Frequency',
+                states: {
+                    hover: {
+                        color: '#9ba5b5'
+                    }
+                },
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.name}'
+                }
+            }]
+        });
+
+        Highcharts.mapChart('thirst', {
+            chart: {
+                map: 'countries/us/us-ok-all'
+            },
+
+            title: {
+                text: 'Thirst (1-10)'
+            },
+
+            subtitle: {
+                text: 'Source map: <a href="http://code.highcharts.com/mapdata/countries/us/us-ok-all.js">Oklahoma</a>'
+            },
+
+            mapNavigation: {
+                enabled: true,
+                buttonOptions: {
+                    verticalAlign: 'bottom'
+                }
+            },
+
+            colorAxis: {
+                min: 0,
+                minColor: '#b2a677',
+                maxColor: '#7ca6ff',
+            },
+
+            series: [{
+                data: data,
+                name: 'Thirst',
+                states: {
+                    hover: {
+                        color: '#9ba5b5'
+                    }
+                },
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.name}'
+                }
+            }]
+        });
+        </script>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="settings" class="service">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <div >
+                                <div>
+                                    <div class="head_title text-center">
+                                        <h2>SETTINGS</h2>
+                                        <br>
+                                        <p>Input your zipcode, time of sprinkle, and desired lawn type.</p>
+                                        <div class="separator2"></div>
+                                    </div>
+
+                                    <div class="main_service_content">
+
+
+
+                                       <div class="form-style-7">
+                                            <ul>
+                                                <li>
+                                                    <input type="text" name="zipcode" maxlength="100" placeholder="Zipcode">
+                                                    <span>Enter your city's zipcode</span>
+                                                </li>
+                                                <li>
+                                                    <input type="text" name="time" maxlength="100" placeholder="Time">
+                                                    <span>Enter a time</span>
+                                                </li>
+
+                                                <div class="row">
+                                                    <div>
+                                                        <li class="lawn">
+                                                             <input type="button" id="Economy" value="Economical Lawn" class = "btn"/>
+                                                             <input type="button" id="Lush" value="Lush Lawn" class = "btn"/>
+                                                        </li>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <li>
+                                                  <form action="/" method="post">
+                                                <p><input type="submit" name="submit" value="Turn On"> </p>
+                                                <p><input type="submit" name="submit" value="Turn Off"> </p>
+                                                  </form>
+                                                    <!-- <input type="submit" value="Sprinkle" class = "btn btn-primary" > -->
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section id="testimonial" class="testimonial">
+                <div class="video_overlay">
+                    <div class="container">
+                        <div class="row">
+                            <div class="main_testimonial sections text-center">
+                                <div class="col-md-12" data-wow-delay="0.2s">
+                                    <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                                        <!-- Bottom Carousel Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#quote-carousel" data-slide-to="0" class="active">
+                                                <img class="img-responsive img-circle" src="/static//static/assets/images/test2.jpg" alt="">
+
+                                        </ol>
+
+                                        <!-- Carousel Slides / Quotes -->
+                                        <div class="carousel-inner text-center">
+
+                                            <!-- Quote 1 -->
+                                            <div class="item active">
+                                                <blockquote>
+                                                    <div class="row">
+                                                        <div class="col-sm-8 col-sm-offset-2">
+                                                            <i class="fa fa-quote-left"></i>
+                                                            <p>
+                                                            As mayor of Oklahoma City, Sprinkle’s soil moisture data allows the city council to see which counties are severely over and under watered.
+                                                            This information helps us establish which counties should have shorter or longer sprinkle periods throughout the day, a major step towards conserving water.
+                                                            </p>
+                                                            <div class="single_test_author">
+                                                                <h4>PETER JAMES</h4>
+                                                                <p>MAYOR OF OKLAHOMA CITY</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </blockquote>
+                                            </div>
+
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="contact" class="contact sections">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <div class="row">
+                                <div class="contact_contant">
+
+                                    <div class="col-sm-6">
+                                        <h4>GIVE US GOOD NEWS</h4>
+                                        <div class="single_contant_left">
+                                            <form action="#" id="formid">
+                                                <!--<div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">-->
+
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="name" placeholder="First name" required="">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <textarea class="form-control" name="message" rows="8" placeholder="Message"></textarea>
+                                                </div>
+
+                                                <div class="">
+                                                    <input type="submit" value="Submit" class="btn btn-primary">
+                                                </div>
+                                                <!--</div>-->
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+
+                                        <div class="main_clinetslogo">
+                                            <h4>OUR SPONSORS</h4>
+                                            <div class="row">
+                                                <div class="col-sm-6 col-xs-6">
+                                                    <a href=""><img src="/static//static/assets/images/clogo1.png" alt="" /></a>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-6">
+                                                    <a href=""><img src="/static//static/assets/images/clogo2.png" alt="" /></a>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-6">
+                                                    <a href=""><img src="/static//static/assets/images/clogo3.png" alt="" /></a>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-6">
+                                                    <a href=""><img src="/static//static/assets/images/clogo4.png" alt="" /></a>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-6">
+                                                    <a href=""><img src="/static//static/assets/images/clogo5.png" alt="" /></a>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-6">
+                                                    <a href=""><img src="/static//static/assets/images/clogo6.png" alt="" /></a>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-6">
+                                                    <a href=""><img src="/static//static/assets/images/clogo7.png" alt="" /></a>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-6">
+                                                    <a href=""><img src="/static//static/assets/images/clogo8.png" alt="" /></a>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-6">
+                                                    <a href=""><img src="/static//static/assets/images/clogo9.png" alt="" /></a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div> <!-- End of messsage contant-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section id="footer" class="footer_widget">
+                <div class="video_overlay">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-10 col-sm-offset-1">
+                                <div class="row">
+                                    <div class="main_widget">
+                                        <div class="col-sm-4 col-xs-12">
+                                            <div class="single_widget wow fadeIn" data-wow-duration="800ms">
+                                                <div class="footer_logo">
+                                                    <img src="/static//static/assets/images/logo.png" alt="" />
+                                                </div>
+                                                <p>Sprinkle was designed to implement environmentally green habits in smart cities around the world.  </p>
+
+
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-4  col-xs-12">
+                                            <div class="single_widget wow fadeIn" data-wow-duration="800ms">
+                                                <h4>OUR STUDIO</h4>
+                                                <ul>
+                                                    <li><a href="">
+                                                            <i class="fa fa-map-marker"></i>
+                                                            <span>600 North Campus Drive
+                                                            <br>  Glassboro, NJ 08028
+                                                            </span>
+                                                        </a></li>
+                                                    <li><a href=""><i class="fa fa-phone"></i> 0123 456 789 0112</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-4 col-xs-12">
+                                            <div class="single_widget wow fadeIn" data-wow-duration="800ms">
+                                                <h4>STAY IN TOUCH</h4>
+
+                                                <div class="footer_subcribs_area">
+                                                    <form class="navbar-form navbar-left" role="search">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Search">
+                                                            <button type="submit" class="submit_btn"></button>
+                                                        </div>
+
+                                                    </form>
+                                                    <div class="flowus">
+                                                        <a href=""><i class="fa fa-facebook"></i></a>
+                                                        <a href=""><i class="fa fa-twitter"></i></a>
+                                                        <a href=""><i class="fa fa-google-plus"></i></a>
+                                                        <a href=""><i class="fa fa-instagram"></i></a>
+                                                        <a href=""><i class="fa fa-youtube"></i></a>
+                                                        <a href=""><i class="fa fa-dribbble"></i></a>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main_footer text-center">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-xs-12">
+                                            <ul class="right_menu list-inline">
+                                                <li><a href="">HELP</a></li>
+                                                <li><a href="">TERMS & CONDITION</a></li>
+                                                <li><a href="">PRIVACY</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-xs-12">
+                                            <div class="copyright_text">
+                                                <p class=" wow fadeInRight" data-wow-duration="1s">Made with <i class="fa fa-heart"></i> by <a href="http://bootstrapthemes.co">Bootstrap Themes</a>2018. All Rights Reserved</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+        </div>
+
+        <!-- START SCROLL TO TOP  -->
+
+        <div class="scrollup">
+            <a href="#"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <script src="/static//static/assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="/static//static/assets/js/vendor/bootstrap.min.js"></script>
+
+        <script src="/static//static/assets/js/jquery.magnific-popup.js"></script>
+        <script src="/static//static/assets/js/jquery.mixitup.min.js"></script>
+        <script src="/static//static/assets/js/jquery.easing.1.3.js"></script>
+        <script src="/static//static/assets/js/jquery.masonry.min.js"></script>
+        <script src="/static//static/assets/js/jquery.fancybox.pack.js"></script>
+
+        <script src="/static//static/assets/js/plugins.js"></script>
+        <script src="/static//static/assets/js/main.js"></script>
+
+    </body>
+</html>
