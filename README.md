@@ -9,3 +9,6 @@ Project built for ProfHacks 2018 at Rowan University
 
 For the "Sensor Journalism" track
 http://profhacks.com/
+
+To run: 
+Install dependencies, upload the arduino sketch to your arduino, then run 'python3 pyduino_website.py'. 
